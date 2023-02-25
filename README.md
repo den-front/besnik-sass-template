@@ -1,4 +1,4 @@
-<h1>Besnik Sass Template | <a href="https://den-front.github.io/showcases.github.io/besnik-sass-template/">DEMO</a></h1>
+<h1>Besnik Sass Template | <a href="https://den-front.github.io/showcases/besnik-sass-template/">DEMO</a></h1>
 
 <img src="preview.png" />
 
