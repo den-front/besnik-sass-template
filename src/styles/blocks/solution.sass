@@ -1,0 +1,41 @@
+.solution
+    display: flex
+    align-items: center
+    justify-content: center
+    gap: 5%
+
+    &--reverse
+        flex-direction: row-reverse
+
+    &__text
+        margin-bottom: 30px
+
+    &__sub
+        font-weight: 600
+        font-size: 14px
+        line-height: 18px
+        letter-spacing: 0.2em
+        text-transform: uppercase
+        margin-bottom: 8px
+        margin-top: 0
+
+    &__title
+        color: $dark
+        font-weight: 600
+        font-size: 30px
+        line-height: 40px
+        margin-top: 0
+        margin-bottom: 14px
+
+    &__image
+        flex: 0 0 45%
+
+        img
+            width: 100%
+
+    @media (max-width: 700px)
+        flex-direction: column-reverse
+        margin-bottom: 50px
+
+        &:last-child
+            margin-bottom: 0

@@ -1,0 +1,48 @@
+.main
+    .header
+        .container
+            .header__layout
+                .logo.logo--white
+                    include ../../static/images/logo.svg
+                nav
+                    a.header__mobile-menu-btn(href="#mobile-menu-open")
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                        </svg>
+
+                    ul.menu
+                        li.menu__item-close
+                            a.menu__item__link(href="#mobile-menu-close")
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                                </svg>
+
+                        li.menu__item.menu__item_with-submenu
+                            a.menu__item__link(href="#") Solution
+                            ul.menu__submenu
+                                li.menu__submenu-item
+                                    a.menu__submenu-item-link Lorem
+                                li.menu__submenu-item
+                                    a.menu__submenu-item-link Ipsum
+                                li.menu__submenu-item
+                                    a.menu__submenu-item-link Dollar
+                        li.menu__item
+                            a.menu__item__link(href="#") Plans
+                        li.menu__item
+                            a.menu__item__link(href="#") Resource
+                        li.menu__item
+                            a.menu__item__link(href="#") Blog
+                button.btn.btn--light Request Demon
+    .container.p-relative
+        //- Space
+        div(style="padding-top: 25%")
+        h1.title.title--big.d-inline-block Tell a better <br> brand story
+        p.text.text-dark(style="max-width: 490px") Automate the way you search through hashtags and suggested profiles to find results 100x faster.
+        button.btn.btn--primary.btn--lg Request Demo
+            include ../../static/icons/arrow-right.svg
+        //- Images
+        img.main__img.main__img--1(src="../static/images/main_block/1.png" alt="")
+        img.main__img.main__img--2(src="../static/images/main_block/2.png" alt="")
+        img.main__img.main__img--3(src="../static/images/main_block/3.png" alt="")
+        img.main__img.main__img--4(src="../static/images/main_block/4.png" alt="")
+        img.main__img.main__img--5(src="../static/images/main_block/5.png" alt="")

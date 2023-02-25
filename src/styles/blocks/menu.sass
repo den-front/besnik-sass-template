@@ -1,0 +1,98 @@
+.menu
+    display: flex
+    list-style: none
+    margin: 0
+    padding: 0
+    gap: 35px
+
+    &__item
+        position: relative
+        padding: 10px 0
+
+        &__link
+            text-decoration: none
+            color: $white
+
+            &:focus + .menu__submenu
+                display: block
+
+        &_with-submenu
+            padding-right: 15px
+
+            &::after
+                position: absolute
+                top: 50%
+                right: 0
+                transform: translateY(-50%)
+                width: 8px
+                height: 5px
+                display: block
+                content: ""
+                background-image: url('../../static/images/icons/arrow-down.svg')
+
+        &:hover .menu__submenu
+            display: block
+
+    &__submenu
+        display: none
+        position: absolute
+        left: 50%
+        bottom: 0
+        transform: translate(-50%, 100%)
+        padding: 0
+        list-style: none
+        background: $white
+        border-radius: 10px
+        overflow: hidden
+        z-index: 2500
+
+        &-item-link
+            display: block
+            padding: 10px 25px
+            cursor: pointer
+
+            &:hover
+                color: $white
+                background: $orange
+
+    @media (max-width: 920px)
+        position: fixed
+        background: rgb(177,62,226)
+        background: linear-gradient(180deg, rgba(177,62,226,1) 0%, rgba(220,41,126,1) 100%)
+        top: 0
+        left: 0
+        width: 100vw
+        height: 100vh
+        z-index: 2500
+        flex-direction: column
+        text-align: center
+        justify-content: center
+        visibility: hidden
+        opacity: 0
+        transition: opacity 0.3s, visibility 0.3s
+        transform: translateX(100%)
+
+        &__item
+            font-size: 40px
+            padding-right: 0
+
+            &::after
+                display: none
+
+            &-close
+                position: absolute
+                top: 5px
+                right: 5px
+
+                svg
+                    width: 34px
+                    height: 34px
+
+#mobile-menu-open:target
+    overflow: hidden
+    height: 100vh
+
+    .menu
+        visibility: visible
+        opacity: 1
+        transform: translateX(0)

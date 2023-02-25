@@ -1,0 +1,51 @@
+.review
+    max-width: 477px
+    position: relative
+
+    @media (max-width: 900px)
+        margin-left: auto
+        margin-right: auto
+
+    &__text
+        color: #6D6D6D
+        font-style: italic
+        font-size: 22px
+        line-height: 36px
+        margin-top: 40px
+        margin-bottom: 55px
+
+    &__name
+        font-family: $secondary-font
+        font-weight: 700
+        font-size: 25px
+        line-height: 30px
+        color: #1C1C1D
+        margin-bottom: 12px
+
+    &__position
+        font-weight: 500
+        font-size: 16px
+        line-height: 19px
+        color: #9C988F
+
+    &-controls
+        position: absolute
+        right: 0
+        bottom: 0
+        display: flex
+        gap: 5px
+
+    &-control
+        display: flex
+        align-items: center
+        justify-content: center
+        background: $white
+        box-shadow: 0px 14px 30px -4px rgba(206, 206, 206, 0.5)
+        border-radius: 2px
+        border: 0
+        padding: 8px 12px
+        cursor: pointer
+        border: 1px solid transparent
+
+        &:hover
+            border: 1px solid #E8E4DC

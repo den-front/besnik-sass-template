@@ -1,0 +1,135 @@
+.main
+    background: url('../../static/images/bg.svg')
+    background-repeat: no-repeat
+    background-size: 100%
+    padding: 0 0 60px 0
+    overflow: hidden
+
+    &__img
+        --x-offset: 0px
+        --y-offset: 0px
+
+        position: absolute
+        left: 50%
+        top: 50%
+
+        transform: translate(calc(-50% + var(--x-offset, 0px)), calc(-50% + var(--y-offset, 0px)))
+
+    &__img--1
+        --x-offset: 343px
+        --y-offset: -152px
+
+        width: 208px
+        height: 231px
+
+    &__img--2
+        --x-offset: 620px
+        --y-offset: -74px
+
+        width: 309px
+        height: 291px
+
+        box-shadow: 0px 40px 70px -18px rgba(0, 0, 0, 0.1)
+        border-radius: 8px
+
+    &__img--3
+        --x-offset: 295px
+        --y-offset: 160px
+
+        width: 306px
+        height: 339px
+
+        box-shadow: 0px 40px 70px -18px rgba(0, 0, 0, 0.1)
+        border-radius: 8px
+
+    &__img--4
+        --x-offset: 670px
+        --y-offset: 150px
+
+        width: 380px
+        height: 113px
+
+    &__img--5
+        --x-offset: 580px
+        --y-offset: 265px
+
+        width: 200px
+        height: 76px
+
+        box-shadow: 0px 40px 70px -18px rgba(0, 0, 0, 0.1)
+        border-radius: 8px
+
+    @media (max-width: 920px)
+
+        .text
+            max-width: 300px !important
+
+        &__img--1
+            --x-offset: 243px
+            --y-offset: -152px
+
+        &__img--2
+            --x-offset: 500px
+            --y-offset: -74px
+
+            width: 309px
+            height: 291px
+
+        &__img--3
+            --x-offset: 365px
+            --y-offset: 90px
+
+        &__img--4
+            --x-offset: 520px
+            --y-offset: 150px
+
+            width: 380px
+            height: 113px
+
+        &__img--5
+            --x-offset: 230px
+            --y-offset: 255px
+
+            width: 200px
+            height: 76px
+
+    @media (max-width: 600px)
+
+        &__img--1
+            --x-offset: 143px
+            --y-offset: -102px
+
+            width: 104px
+            height: 115px
+
+        &__img--2
+            --x-offset: 250px
+            --y-offset: -34px
+
+            width: 150px
+            height: 145px
+
+        &__img--3
+            --x-offset: 205px
+            --y-offset: 90px
+
+            width: 150px
+            height: 165px
+
+        &__img--4
+            --x-offset: 220px
+            --y-offset: 220px
+
+            width: 190px
+            height: 57px
+
+        &__img--5
+            --x-offset: 220px
+            --y-offset: 175px
+
+            width: 100px
+            height: 38px
+
+    @media (max-width: 400px)
+        &__img
+            display: none

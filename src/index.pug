@@ -1,0 +1,21 @@
+include _functions.pug
+
+doctype html
+html(lang="en")
+  head
+    //- Fonts
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lato:wght@700&family=Poppins:wght@600&display=swap" rel="stylesheet">
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    //- Styles
+    link(rel="stylesheet" href="styles/style.sass")
+  body#mobile-menu-open
+    include blocks/main.pug
+    include blocks/clients.pug
+    include blocks/solutions.pug
+    include blocks/stats.pug
+    include blocks/team.pug
+    include blocks/reviews.pug
+    include blocks/subscribe.pug
+    include blocks/footer.pug

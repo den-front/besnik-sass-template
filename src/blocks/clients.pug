@@ -1,0 +1,7 @@
+section.clients
+    .container
+        h2.title.title--small.text-gray SOME OF OUR TRUSTED CLIENTS
+        .clients__list
+            each i in range(5)
+                a(href="#").clients__list-item
+                    img(src="../static/images/clients/" + i + ".svg" alt="")
