@@ -1,7 +1,7 @@
 {
   "scripts": {
     "start": "yarn parcel src/index.pug",
-    "build": "yarn parcel build src/index.html"
+    "build": "yarn parcel build --public-url . src/index.pug"
   },
   "devDependencies": {
     "@parcel/transformer-pug": "2.8.1",
